@@ -1,0 +1,118 @@
+<script type="text/javascript">
+    // 7.Write a JavaScript program to find which number is greter in 3 numbers using nested if else.
+
+
+     // Simple function
+    function no(){
+        var a = parseInt(prompt("Enter a :- "));
+        var b = parseInt(prompt("Enter b :- "));
+        var c = parseInt(prompt("Enter c :- "));
+
+        if(a>b){
+            if(a>c){
+                document.write(`<h1>A is Big...</h1>`);
+            }else{
+                document.write(`<h1>C is Big...</h1>`);
+            }
+        }else{
+            if(b>c){
+                document.write(`<h1>B is Big...</h1>`);
+            }else{
+                document.write(`<h1>C is Big...</h1>`);
+            }
+        }
+    }
+    no();
+
+
+    /////////////////////////////
+
+    // using no return with parameter  
+
+    function no1(a,b,c){
+    
+        if(a>b){
+            if(a>c){
+                document.write(`<h1>A is Big...</h1>`);
+            }else{
+                document.write(`<h1>C is Big...</h1>`);
+            }
+        }else{
+            if(b>c){
+                document.write(`<h1>B is Big...</h1>`);
+            }else{
+                document.write(`<h1>C is Big...</h1>`);
+            }
+        }
+    }
+    no1(10,20,30);
+
+
+    /////////////////////////////
+
+    //using return with no parameter
+
+    function no2(){
+        var a = parseInt(prompt("Enter a :- "));
+        return a;
+    }
+    function no3(){
+        var b = parseInt(prompt("Enter b :- "));
+        return b;
+    }
+    function no4(){
+        var c = parseInt(prompt("Enter c :- "));
+        return c;
+    }
+
+    var a=no2();
+    var b=no3();
+    var c=no4();
+
+    if(a>b){
+            if(a>c){
+                document.write(`<h1>A is Big...</h1>`);
+            }else{
+                document.write(`<h1>C is Big...</h1>`);
+            }
+        }else{
+            if(b>c){
+                document.write(`<h1>B is Big...</h1>`);
+            }else{
+                document.write(`<h1>C is Big...</h1>`);
+            }
+        }
+    
+    /////////////////////////////       
+    
+    // using return with parameter
+
+    function no5(a){
+        return a;
+    }
+    function no6(b){
+        return b;
+    }
+    function no7(c){
+        return c;
+    }
+
+    var a=no5(10);
+    var b=no6(20);
+    var c=no7(30);
+
+    if(a>b){
+            if(a>c){
+                document.write(`<h1>A is Big...</h1>`);
+            }else{
+                document.write(`<h1>C is Big...</h1>`);
+            }
+        }else{
+            if(b>c){
+                document.write(`<h1>B is Big...</h1>`);
+            }else{
+                document.write(`<h1>C is Big...</h1>`);
+            }
+        }
+
+</script>

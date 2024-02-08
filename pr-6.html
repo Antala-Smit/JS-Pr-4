@@ -1,0 +1,75 @@
+<script type="text/javascript">
+    // 6.Write a javascript Program to perform a swapping of two variables.
+
+    // Simple function
+    function swap(){
+        var a = parseInt(prompt("Enter a :- "));
+        var b = parseInt(prompt("Enter b :- "));
+        var c=a;
+        a=b;
+        b=c;
+
+        document.write(`<h1>A = ${a}</h1>`);
+        document.write(`<h1>B = ${b}</h1>`);
+    }
+    swap();
+
+    /////////////////////////////
+    //using return with no parameter
+
+    function swap1(){
+        var a = parseInt(prompt("Enter a :- "));
+        return a;
+    }
+    function swap2(){
+        var b = parseInt(prompt("Enter b :- "));
+        return b;
+    }
+
+    var a = swap1();
+    var b = swap2();
+    var c;
+            c=a;
+            a=b;
+            b=c;
+
+            document.write(`<h1>A = ${a}</h1>`);
+            document.write(`<h1>B = ${b}</h1>`);
+
+    /////////////////////////////     
+
+    // using no return with parameter  
+    
+    function swap3(a,b){
+        var c;
+            c=a;
+            a=b;
+            b=c;
+
+            document.write(`<h1>A = ${a}</h1>`);
+            document.write(`<h1>B = ${b}</h1>`);
+    }
+    swap3(10,20);
+
+    /////////////////////////////
+
+    // using return with parameter
+
+    function swap6(a){
+        return a;
+    }
+    function swap5(b){
+        return b;
+    }
+
+    var a = swap6(10);
+    var b = swap5(20);
+    var c;
+            c=a;
+            a=b;
+            b=c;
+
+            document.write(`<h1>A = ${a}</h1>`);
+            document.write(`<h1>B = ${b}</h1>`);
+    
+</script>
